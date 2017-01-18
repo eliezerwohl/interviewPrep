@@ -1,0 +1,17 @@
+highest lowest
+
+
+function highAndLow(numbers){
+//put it into an array, split by space
+  var array = numbers.split(" ");
+  //sort array 
+  array.sort(function(a,b){ //Array now becomes [7, 8, 25, 41]
+    return a - b  
+  })
+  return  array[array.length -1 ] + " " + array[0]
+}
+
+test cases:
+Test.assertEquals(highAndLow("4 5 29 54 4 0 -214 542 -64 1 -3 6 -6"), "542 -214");
+Test.assertEquals(highAndLow("1 -1"), "1 -1");
+Test.assertEquals(highAndLow("1 1"), "1 1");
