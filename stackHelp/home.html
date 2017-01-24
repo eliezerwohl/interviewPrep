@@ -1,54 +1,12 @@
 
 
+<!DOCTYPE html>
 <html>
+<head>
+    <title></title>
+</head>
+<body>
 
-    <head>
-
-        <title>Reaction Tester</title>
-
-    </head>
-
-    <body>
-
-        <h1>Test Your Reactions!</h1>
-
-        <p>Click on the boxes and circles as quickly as you can!</p>
-
-        <button id="start-button">Begin!</button>
-
-        <div  style="height:100px;width:100px" id="current-shape"></div>
-
-        <script type="text/javascript">
-
-            document.getElementById("start-button").onclick = function() {
-                document.getElementById("start-button").style.display = "none";
-                newShape();     
-            }
-
-            function newShape() {
-                //default values - to make it easy and straightforward
-                debugger
-                var nextShape = "circle";
-                var nextColor = "red";
-                var nextSize = 100; //radius
-                //left and top margins used to determine x and y coordinates of shape, respectively
-                var nextLeftMargin = 200;
-                var nextTopMargin = 200;
-
-                document.getElementById("current-shape").style.backgroundColor = nextColor;
-                document.getElementById("current-shape").style.marginLeft = nextLeftMargin;
-                document.getElementById("current-shape").style.marginTop = nextTopMargin;
-
-                if(nextShape = "circle") {
-                    document.getElementById("current-shape").style.borderRadius = 50;
-                } else { //nextShape = "box"
-                    document.getElementById("current-shape").style.borderRadius = 0;
-                }
-
-            }
-
-        </script>
-
-    </body>
-
+<script type="text/javascript" src="javascript.js"></script>
+</body>
 </html>
